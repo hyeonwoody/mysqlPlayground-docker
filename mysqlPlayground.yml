@@ -1,0 +1,16 @@
+version: '3'
+
+
+services:
+  playground:
+    image:
+      mysql:8.0
+    container_name: playground
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: playground
+      MYSQL_USER: play
+      MYSQL_PASSWORD: ground
+    ports:
+      - 3307:3306
